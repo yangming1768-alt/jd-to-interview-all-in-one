@@ -1,0 +1,4 @@
+interface:
+  display_name: "小红书面经采集与回答"
+  short_description: "采集小红书真实面经，并结合个人简历生成有引用的个性化回答"
+  default_prompt: "使用 $interview-experience-rednotes 根据我的 JD 收集小红书面经；如果我提供简历和准备材料，再生成有引用的 Markdown、Word 和 HTML 面经回答。"
