@@ -1,11 +1,11 @@
-# JD to Interview All in One
+# 从 JD 到面试：一站式准备工具箱
 
 > 从读懂 JD、研究岗位相关产品，到收集真实面经并准备个人回答的一站式非技术岗面试准备工具箱。
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Codex Skills](https://img.shields.io/badge/Codex-Skills-3157D5)
+[![MIT 开源协议](https://img.shields.io/badge/开源协议-MIT-yellow.svg)](LICENSE)
+![Codex 技能](https://img.shields.io/badge/Codex-技能-3157D5)
 
-`jd-to-interview-all-in-one` 集成三个可以独立使用、也可以串联工作的 Codex Skills，面向产品、运营、销售、商务、设计、市场、职能和管培生等非技术岗位。
+`jd-to-interview-all-in-one` 集成三个可以独立使用、也可以串联工作的 Codex 技能，面向产品、运营、销售、商务、设计、市场、职能和管培生等非技术岗位。
 
 用户只需提供一份 JD，即可逐步完成：
 
@@ -32,17 +32,17 @@ flowchart LR
     I --> J
 ```
 
-三个 Skill 没有强制执行顺序，也不要求全部使用。你可以先用 `jd-quicklearn` 建立岗位认知，再根据需要研究产品或采集面经；如果已经熟悉岗位，也可以直接运行后两个模块。
+三个技能没有强制执行顺序，也不要求全部使用。你可以先用 `jd-quicklearn` 建立岗位认知，再根据需要研究产品或采集面经；如果已经熟悉岗位，也可以直接运行后两个模块。
 
-## 包含的 Skills
+## 包含的三个技能
 
-| Skill | 解决的问题 | 主要输出 |
+| 技能 | 解决的问题 | 主要输出 |
 |---|---|---|
 | [`jd-quicklearn`](skills/jd-quicklearn/) | 这个岗位到底做什么，我需要补哪些知识？ | 岗位学习指南 Markdown |
 | [`product-research`](skills/product-research/) | 相关产品、竞品和业务逻辑是什么？ | 产品深度研究与来源汇总 |
 | [`interview-experience-rednotes`](skills/interview-experience-rednotes/) | 真实面试会问什么，我该如何结合自身经历回答？ | 面经汇总与个性化回答的 Markdown、Word、HTML |
 
-### 1. JD QuickLearn：快速理解陌生岗位
+### 1. 岗位快速学习（jd-quicklearn）
 
 将 JD 翻译成零基础也能读懂的岗位学习指南，重点解决“看得懂岗位名称，但不知道实际工作内容”的问题。
 
@@ -63,11 +63,11 @@ flowchart LR
 4. 技能拆解；
 5. 学习路径。
 
-该 Skill 专注于岗位理解和知识补齐，不生成或收集面试题库、历史真题、预测题及答题框架。
+该技能专注于岗位理解和知识补齐，不生成或收集面试题库、历史真题、预测题及答题框架。
 
-### 2. Product Research：深度研究相关产品
+### 2. 产品深度研究（product-research）
 
-将一个 B 端或 C 端软件产品研究成有证据、可追溯、适合面试表达的结构化报告。既可以直接指定产品，也可以让 Skill 从 JD 中识别需要重点研究的业务和产品。
+将一个 B 端或 C 端软件产品研究成有证据、可追溯、适合面试表达的结构化报告。既可以直接指定产品，也可以让技能从 JD 中识别需要重点研究的业务和产品。
 
 默认研究内容包括：
 
@@ -80,7 +80,7 @@ flowchart LR
 
 研究会区分官方事实、媒体转述、行业估算和分析判断，并为关键数据保留来源、日期与证据等级。
 
-### 3. Interview Experience Rednotes：采集真实面经并准备回答
+### 3. 小红书面经采集与回答（interview-experience-rednotes）
 
 根据 JD 从小红书公开内容中搜索、筛选、下载和整理个人面经，适用于产品、运营、销售、设计、市场、职能及管培生等非技术岗位。
 
@@ -104,14 +104,14 @@ flowchart LR
 git clone https://github.com/yangming1768-alt/jd-to-interview-all-in-one.git
 ```
 
-将 `skills/` 下需要使用的一个或多个目录复制到 Agent 的 Skills 目录。Codex 的典型位置为：
+将 `skills/` 下需要使用的一个或多个目录复制到智能体的技能目录。Codex 的典型位置为：
 
 ```text
 %USERPROFILE%\.codex\skills\       # Windows
 ~/.codex/skills/                    # macOS / Linux
 ```
 
-安装全部三个 Skill 后的目录示例：
+安装全部三个技能后的目录示例：
 
 ```text
 ~/.codex/skills/
@@ -120,7 +120,7 @@ git clone https://github.com/yangming1768-alt/jd-to-interview-all-in-one.git
 └── interview-experience-rednotes/
 ```
 
-也可以保留在项目目录中，让 Agent 直接读取对应的 `SKILL.md`。不同 Agent 的 Skill 安装与触发方式可能不同，请以所用产品的说明为准。
+也可以保留在项目目录中，让智能体直接读取对应的 `SKILL.md`。不同智能体的技能安装与触发方式可能不同，请以所用产品的说明为准。
 
 ### 面经采集的额外环境
 
@@ -148,7 +148,7 @@ git clone https://github.com/yangming1768-alt/jd-to-interview-all-in-one.git
 使用 interview-experience-rednotes，根据这份 JD 收集小红书真实面经，并生成 Markdown、Word 和 HTML 汇总。
 ```
 
-### 完整使用三个 Skill
+### 完整使用三个技能
 
 ```text
 这是我的 JD。先使用 jd-quicklearn 帮我理解岗位，再使用 product-research 研究岗位相关产品，最后使用 interview-experience-rednotes 收集真实面经。
@@ -179,7 +179,7 @@ jd-to-interview-all-in-one/
     └── interview-experience-rednotes/
 ```
 
-每个目录都是独立 Skill，包含自己的 `SKILL.md` 和运行所需资源。
+每个目录都是独立技能，包含自己的 `SKILL.md` 和运行所需资源。
 
 ## 独立项目
 
@@ -189,4 +189,4 @@ jd-to-interview-all-in-one/
 
 ## 开源协议
 
-本项目采用 [MIT License](LICENSE)。各 Skill 使用的第三方依赖分别遵循其自身许可证。
+本项目采用 [MIT 许可证](LICENSE)。各技能使用的第三方依赖分别遵循其自身许可证。
